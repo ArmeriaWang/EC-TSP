@@ -13,4 +13,9 @@ public class Population {
             individuals.add(new Individual(cityNum));
         }
     }
+
+    public List<Individual> getIndividuals() {
+        return new ArrayList<>(individuals);
+    }
+
 }

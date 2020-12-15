@@ -20,7 +20,7 @@ public class Individual {
      */
     public Individual(int cityNum) {
         List<Integer> tourList = new ArrayList<Integer>();
-        for (int i = 1; i <= cityNum; i++) {
+        for (int i = 0; i < cityNum; i++) {
             tourList.add(i);
         }
         Collections.shuffle(tourList);
@@ -129,8 +129,11 @@ public class Individual {
     }
 
     public int getPathDistance(TSPProblem problem) {
-        // TODO
-        return 0;
+        int pathDistance = problem.getDistance(0, problem.getCityNum() - 1);
+        for (int i = 1; i < problem.getCityNum(); i++) {
+            pathDistance += problem.getDistance(i - 1, i);
+        }
+        return pathDistance;
     }
 
 }

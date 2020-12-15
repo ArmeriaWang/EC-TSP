@@ -20,7 +20,8 @@ public class PlanarCoordinate extends Coordinate {
     @Override
     public int getDistanceTo(Coordinate c) {
         PlanarCoordinate pc = (PlanarCoordinate) c;
-        return (int) Math.sqrt((getX() - c.getX()) * (getX() - c.getX()) + (getY() - c.getY()) * (getY() - c.getY()));
+        return (int)
+                Math.sqrt((getX() - pc.getX()) * (getX() - pc.getX()) + (getY() - pc.getY()) * (getY() - pc.getY()));
     }
 
 }

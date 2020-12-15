@@ -3,9 +3,7 @@ package base;
 
 import problem.TSPProblem;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * A possible solution for the TSP problem
@@ -13,6 +11,7 @@ import java.util.List;
 public class Individual {
 
     private final List<Integer> tour;
+    private final Random random = new Random();
 
     /**
      * construct a random solution
@@ -52,23 +51,61 @@ public class Individual {
     }
 
     public Individual swap() {
-        // TODO
-        return null;
+        List<Integer> newTour = new ArrayList<>(tour);
+        int x = random.nextInt();
+        int y = random.nextInt();
+        // swap their positions
+        int tmp = tour.get(x);
+        newTour.set(x, tour.get(y));
+        newTour.set(y, tmp);
+        return new Individual(newTour);
     }
 
     public Individual insert() {
-        // TODO
-        return null;
+        List<Integer> newTour = new ArrayList<>(tour);
+        // pick two allele values at random
+        int r1 = random.nextInt(), r2 = random.nextInt();
+        int x = Math.min(r1, r2);
+        int y = Math.max(r1, r2);
+        // move the second to follow the first, shifting the rest along to accommodate
+        newTour.remove(y);
+        newTour.add(x + 1, tour.get(y));
+        return new Individual(newTour);
     }
 
     public Individual inversion() {
-        // TODO
-        return null;
+        List<Integer> newTour = new ArrayList<>(tour);
+        //pick two allele values at random
+        int r1 = random.nextInt(), r2 = random.nextInt();
+        int x = Math.min(r1, r2);
+        int y = Math.max(r1, r2);
+        //invert the substring between them
+        List<Integer> subList = tour.subList(x, y);
+        newTour.removeAll(subList);
+        Collections.reverse(subList);
+        newTour.addAll(x, subList);
+        return new Individual(newTour);
     }
 
     public Individual scramble() {
-        // TODO
-        return null;
+        List<Integer> newTour = new ArrayList<>(tour);
+        int subsetSize = random.nextInt(newTour.size()) + 1;
+
+        Set<Integer> indices = new HashSet<>();
+        for (int i = 0; i < subsetSize; i++) {
+            int index;
+            do {
+                index = random.nextInt(newTour.size());
+            } while (indices.contains(index));
+            indices.add(index);
+        }
+        List<Integer> sortedIndices = new ArrayList<>(indices);
+        List<Integer> randomIndices = new ArrayList<>(indices);
+        Collections.shuffle(randomIndices);
+        for (int i = 0; i < subsetSize; i++) {
+            newTour.set(sortedIndices.get(i), tour.get(randomIndices.get(i)));
+        }
+        return new Individual(newTour);
     }
 
     public List<Individual> orderCrossover(Individual o) {

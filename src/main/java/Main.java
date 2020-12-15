@@ -18,9 +18,9 @@ public class Main {
         fileList.add(new File(dataFilePath + "eil76.tsp"));
         fileList.add(new File(dataFilePath + "eli101.tsp"));
         fileList.add(new File(dataFilePath + "st70.tsp"));
-        fileList.add(new File(dataFilePath + "kroa100.tsp"));
-        fileList.add(new File(dataFilePath + "kroc100.tsp"));
-        fileList.add(new File(dataFilePath + "krod100.tsp"));
+        fileList.add(new File(dataFilePath + "kroA100.tsp"));
+        fileList.add(new File(dataFilePath + "kroB100.tsp"));
+        fileList.add(new File(dataFilePath + "kroD100.tsp"));
         fileList.add(new File(dataFilePath + "lin105.tsp"));
         fileList.add(new File(dataFilePath + "pcb442.tsp"));
         fileList.add(new File(dataFilePath + "pr2392.tsp"));

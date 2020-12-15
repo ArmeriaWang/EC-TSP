@@ -28,7 +28,7 @@ public class Population {
     public int getLeast(TSPProblem problem) {
         int leastDis = individuals.get(0).getPathDistance(problem);
         for (Individual individual : individuals) {
-            leastDis = Math.max(leastDis, individual.getPathDistance(problem));
+            leastDis = Math.min(leastDis, individual.getPathDistance(problem));
         }
         return leastDis;
     }

@@ -18,6 +18,6 @@ public abstract class Coordinate {
         return y;
     }
 
-    public abstract double getDistanceTo(Coordinate c);
+    public abstract int getDistanceTo(Coordinate c);
 
 }

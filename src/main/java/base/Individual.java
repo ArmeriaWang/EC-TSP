@@ -1,6 +1,8 @@
 package base;
 
 
+import problem.TSPProblem;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -69,24 +71,29 @@ public class Individual {
         return null;
     }
 
-    public static List<Individual> orderCrossover(Individual a, Individual b) {
+    public List<Individual> orderCrossover(Individual o) {
         // TODO
         return null;
     }
 
-    public static List<Individual> partiallyMappedCrossover(Individual a, Individual b) {
+    public List<Individual> partiallyMappedCrossover(Individual o) {
         // TODO
         return null;
     }
 
-    public static List<Individual> cycleCrossover(Individual a, Individual b) {
+    public List<Individual> cycleCrossover(Individual o) {
         // TODO
         return null;
     }
 
-    public static List<Individual> edgeRecombination(Individual a, Individual b) {
+    public List<Individual> edgeRecombination(Individual o) {
         // TODO
         return null;
+    }
+
+    public int getPathDistance(TSPProblem problem) {
+        // TODO
+        return 0;
     }
 
 }

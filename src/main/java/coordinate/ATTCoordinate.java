@@ -6,8 +6,17 @@ public class ATTCoordinate extends Coordinate{
         super(x, y);
     }
 
+    public double getX() {
+        return super.getX();
+    }
+
+    public double getY() {
+        return super.getY();
+    }
+
     @Override
-    public double getDistanceTo(Coordinate c) {
+    public int getDistanceTo(Coordinate c) {
+        ATTCoordinate ap = (ATTCoordinate) c;
         double xd = getX() - getX();
         double yd = c.getY() - c.getY();
         double r = Math.sqrt((xd * xd + yd * yd) / 10.0);

@@ -24,7 +24,7 @@ public class GeoCoordinate extends Coordinate {
     }
 
     @Override
-    public double getDistanceTo(Coordinate c) {
+    public int getDistanceTo(Coordinate c) {
         GeoCoordinate gc = (GeoCoordinate) c;
         double RRR = 6378.388;
         double q1 = Math.cos(this.longitude - gc.longitude);

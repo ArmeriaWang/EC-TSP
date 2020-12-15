@@ -122,7 +122,7 @@ public class ProblemReader {
                         break;
                     case "UPPER_DIAG_ROW":
                         for (int i = 0; i < cityNum; i++) {
-                            for (int j = i; j <= i; j++) {
+                            for (int j = i; j < cityNum; j++) {
                                 int weight_ij = allList.get(index);
                                 weights.get(i).set(j, weight_ij);
                                 weights.get(j).set(i, weight_ij);

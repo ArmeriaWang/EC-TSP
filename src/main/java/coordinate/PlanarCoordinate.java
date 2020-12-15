@@ -3,8 +3,6 @@ package coordinate;
 
 public class PlanarCoordinate extends Coordinate {
 
-    private static final double PI = Math.acos(-1.0);
-
     public PlanarCoordinate(double x, double y) {
         super(x, y);
     }

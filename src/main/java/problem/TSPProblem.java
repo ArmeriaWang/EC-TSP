@@ -2,6 +2,8 @@ package problem;
 
 import algo.SimpleGeneticAlgo;
 
+import java.io.IOException;
+
 /**
  * The TSP problem class
  */
@@ -23,9 +25,9 @@ public abstract class TSPProblem {
         return cityNum;
     }
 
-    abstract public Number getDistance(int city1, int city2);
+    abstract public int getDistance(int city1, int city2);
 
-    public void solve(SimpleGeneticAlgo algo) {
+    public void solve(SimpleGeneticAlgo algo) throws IOException {
         algo.solve(this);
     }
 

@@ -4,6 +4,8 @@ import base.Individual;
 import base.Population;
 import problem.TSPProblem;
 
+import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -20,7 +22,12 @@ public class SGAlgo3 extends SimpleGeneticAlgo{
     }
 
     @Override
-    public int solve(TSPProblem problem) {
+    public int solve(TSPProblem problem) throws IOException {
+        SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
+        String sysTime = sf.format(System.currentTimeMillis());
+        logName = problem.getName() + "_algo3_" + sysTime + ".txt";
+        createLog(logName);
+
         Population population = new Population(individualNum, problem.getCityNum());
         int generationCnt = 1;
         while (true) {
@@ -45,10 +52,13 @@ public class SGAlgo3 extends SimpleGeneticAlgo{
                 }
             }
             population = new Population(offsprings);
-            if (generationCnt > generationCntUpper) {
-                return population.getLeastPathDistance(problem);
-            }
             generationCnt++;
+            if (generationCnt % 100 == 0) {
+                writeLog(generationCnt, population, problem);
+            }
+            if (generationCnt > generationCntUpper) {
+                return population.getLeast(problem);
+            }
         }
     }
 

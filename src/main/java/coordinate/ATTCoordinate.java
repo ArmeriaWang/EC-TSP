@@ -16,9 +16,9 @@ public class ATTCoordinate extends Coordinate{
 
     @Override
     public int getDistanceTo(Coordinate c) {
-        ATTCoordinate ap = (ATTCoordinate) c;
+        ATTCoordinate ac = (ATTCoordinate) c;
         double xd = getX() - getX();
-        double yd = c.getY() - c.getY();
+        double yd = ac.getY() - ac.getY();
         double r = Math.sqrt((xd * xd + yd * yd) / 10.0);
         int t = (int) Math.round(r);
         return t < r ? t + 1 : t;

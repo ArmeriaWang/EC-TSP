@@ -66,6 +66,7 @@ public class ProblemReader {
                     throw new IllegalArgumentException();
             }
             coordinates.add(c);
+            line = scanner.nextLine().trim();
         }
         return new CoordProblem(name, cityNum, coordinates);
     }

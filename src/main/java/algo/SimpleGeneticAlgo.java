@@ -1,11 +1,19 @@
 package algo;
 
+import base.Population;
 import problem.TSPProblem;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public abstract class SimpleGeneticAlgo {
 
     protected final int individualNum;
     protected final int generationCntUpper;
+    private final String logPath = "out/log/";
+    protected String logName;
+    private File logFile;
 
     protected SimpleGeneticAlgo(int IndividualNum, int generationCntUpper) {
         this.individualNum = IndividualNum;
@@ -25,6 +33,20 @@ public abstract class SimpleGeneticAlgo {
         }
     }
 
-    public abstract int solve(TSPProblem problem);
+    public abstract int solve(TSPProblem problem) throws IOException;
+
+    protected void createLog(String logName) throws IOException {
+        logFile = new File(logPath + logName);
+        System.out.println(logPath + logName);
+        logFile.createNewFile();
+    }
+
+    protected void writeLog(int generationCnt, Population population, TSPProblem problem) throws IOException {
+        FileWriter fileWriter = new FileWriter(logFile, true);
+        fileWriter.write(String.format("After %d generations:\n", generationCnt));
+        fileWriter.write(String.format("  least  : %d\n", population.getLeast(problem)));
+        fileWriter.write(String.format("  mean   : %d\n", population.getMean(problem)));
+        fileWriter.write(String.format("  std dev: %d\n\n", population.getStandardDeviation(problem)));
+    }
 
 }

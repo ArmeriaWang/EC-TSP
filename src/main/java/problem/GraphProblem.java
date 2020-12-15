@@ -18,7 +18,7 @@ public class GraphProblem extends TSPProblem{
     }
 
     @Override
-    public Integer getDistance(int city1, int city2) {
+    public int getDistance(int city1, int city2) {
         return weights.get(city1).get(city2);
     }
 

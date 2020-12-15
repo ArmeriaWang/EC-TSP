@@ -15,7 +15,7 @@ public class CoordProblem extends TSPProblem{
     }
 
     @Override
-    public Double getDistance(int city1, int city2) {
+    public int getDistance(int city1, int city2) {
         return coordinates.get(city1).getDistanceTo(coordinates.get(city2));
     }
 

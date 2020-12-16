@@ -65,18 +65,40 @@ public class Population {
         return result;
     }
 
+    public List<Integer> getIndividualDistanceList(TSPProblem problem) {
+        List<Integer> result = new ArrayList<>();
+        for (Individual individual : individuals) {
+            result.add(individual.getTourDistance(problem));
+        }
+        return result;
+    }
+
     public Population fitnessProportionate(TSPProblem problem) {
         List<Double> fitnessList = new ArrayList<>();
-        int fitnessSum = 0;
+        double fitnessSum = 0;
         for (Individual individual : individuals) {
             double fitness = individual.getFitness(problem, getSumTourDis(problem));
             fitnessList.add(fitness);
             fitnessSum += fitness;
         }
+        double fitnessMean = fitnessSum / individuals.size();
+        double fitnessStdDev = 0;
+        for (double fitness : fitnessList) {
+            fitnessStdDev += Math.abs(fitness - fitnessMean);
+        }
+        double adjustment = fitnessMean - 0.5 * fitnessStdDev;
+        fitnessSum = 0;
+        for (int i = 0; i < individuals.size(); i++) {
+            double newFitness = Math.max(0, fitnessList.get(i) - adjustment);
+            fitnessList.set(i, newFitness);
+            fitnessSum += newFitness;
+        }
         List<Double> proportionList = new ArrayList<>();
         proportionList.add(fitnessList.get(0) / fitnessSum);
         for (int i = 1; i < individuals.size() - 1; i++) {
             proportionList.add(proportionList.get(i - 1) + fitnessList.get(i) / fitnessSum);
+        }
+        for (int i = 0; i < individuals.size(); i++) {
         }
         proportionList.add(1.0);
         List<Individual> parents = new ArrayList<>();
@@ -91,15 +113,11 @@ public class Population {
 
     public Population tournamentSelection(TSPProblem problem, int sampleNum) {
         List<Individual> parents = new ArrayList<>();
-        List<Individual> candidates = new ArrayList<>();
+        List<Individual> candidates;
         for (int i = 0; i < individuals.size(); i++) {
-            candidates.clear();
-            while (candidates.size() != sampleNum) {
-                Individual candidate = individuals.get(random.nextInt(individuals.size()));
-                if (!candidates.contains(candidate)) {
-                    candidates.add(candidate);
-                }
-            }
+            candidates = new ArrayList<>(individuals);
+            Collections.shuffle(candidates);
+            candidates = candidates.subList(0, sampleNum);
             Individual bestCandidate = candidates.get(0);
             int leastDistance = bestCandidate.getTourDistance(problem);
             for (Individual candidate : candidates) {
@@ -122,10 +140,11 @@ public class Population {
         parentList.sort(new IndividualComparator(parentMap));
         Map<Individual, Integer> offspringMap = offsprings.getIndividualDistanceMap(problem);
         offspringList.sort(new IndividualComparator(offspringMap));
-        List<Individual> individuals = new ArrayList<>();
-        individuals.addAll(parentList.subList(0, eliteNum));
-        individuals.addAll(offspringList.subList(0, individuals.size() - eliteNum));
-        return new Population(individuals);
+        List<Individual> newIndividuals = new ArrayList<>();
+        newIndividuals.addAll(parentList.subList(0, eliteNum));
+        newIndividuals.addAll(offspringList.subList(0, individuals.size() - eliteNum));
+//        System.out.println("individuals.size() = " + newIndividuals.size());
+        return new Population(newIndividuals);
     }
 
 }

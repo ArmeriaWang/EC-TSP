@@ -92,13 +92,15 @@ public class Individual {
         List<Integer> newTour = new ArrayList<>(tour);
         //pick two allele values at random
         int[] randomPair = getRandomPair(newTour.size());
-        int x = randomPair[0];
-        int y = randomPair[1] + 1;
+        int l = randomPair[0];
+        int r = randomPair[1] + 1;
         //invert the substring between them
-        List<Integer> subList = tour.subList(x, y);
-        newTour.removeAll(subList);
-        Collections.reverse(subList);
-        newTour.addAll(x, subList);
+        for (int i = l; i < l + (r - l) / 2; i++) {
+            int j = r - (i - l + 1);
+            int tmp = newTour.get(i);
+            newTour.set(i, newTour.get(j));
+            newTour.set(j, tmp);
+        }
         return new Individual(newTour);
     }
 
@@ -164,13 +166,13 @@ public class Individual {
     private Individual singlePartiallyMappedCrossover(Individual o, int l, int r) {
         List<Integer> child = new ArrayList<>(tour);
         int[] mapping = new int[tour.size()];
-        for (int i = 0; i < r; i++) {
+        for (int i = 0; i < tour.size(); i++) {
             mapping[i] = -1;
         }
         for (int i = l; i < r; i++) {
             mapping[getAt(i)] = o.getAt(i);
         }
-        for (int i = r; i != l; i = (i + 1) % tour.size()) {
+        for (int i = r % tour.size(); i != l; i = (i + 1) % tour.size()) {
             int mut = mapping[o.getAt(i)];
             int last = -1;
             while (mut != -1) {
@@ -183,21 +185,18 @@ public class Individual {
     }
 
     public List<Individual> cycleCrossover(Individual o) {
-        int[] randomPair = getRandomPair(tour.size());
-        int l = randomPair[0];
-        int r = randomPair[1];
-        Individual i1 = singleCycleCrossover(o, l, r);
-        Individual i2 = o.singleCycleCrossover(this, l, r);
+        Individual i1 = singleCycleCrossover(o);
+        Individual i2 = o.singleCycleCrossover(this);
         return List.of(i1, i2);
     }
 
-    private Individual singleCycleCrossover(Individual o, int l, int r) {
+    private Individual singleCycleCrossover(Individual o) {
         List<Integer> child = new ArrayList<>(tour);
         List<List<Integer>> cycles = new ArrayList<>();
         int cityInCycleCnt = 0;
         int[] mapping = new int[tour.size()];
         int[] position = new int[tour.size()];
-        for (int i = 0; i < r; i++) {
+        for (int i = 0; i < tour.size(); i++) {
             mapping[i] = -1;
             position[tour.get(i)] = i;
         }
@@ -206,20 +205,22 @@ public class Individual {
             if (mapping[index] == -1) {
                 int i = index;
                 List<Integer> cycle = new ArrayList<>();
-                while (mapping[i] != -1) {
+                while (mapping[i] == -1) {
                     cycle.add(i);
+                    cityInCycleCnt++;
                     mapping[i] = o.getAt(i);
                     i = position[mapping[i]];
                 }
                 cycles.add(cycle);
+//                System.out.println("cycle = " + cycle);
             }
             index++;
         }
         for (int i = 0; i < cycles.size(); i++) {
             if (i % 2 == 0) {
                 List<Integer> cycle = cycles.get(i);
-                for (int j = 0; j < cycle.size(); j++) {
-                    child.set(cycle.get(j), o.getAt(j));
+                for (int pos : cycle) {
+                    child.set(pos, o.getAt(pos));
                 }
             }
         }
@@ -234,8 +235,9 @@ public class Individual {
     public static void main(String[] args) {
         Individual i1 = new Individual(List.of(0, 1, 2, 3, 4, 5, 6, 7, 8));
         Individual i2 = new Individual(List.of(8, 2, 6, 7, 1, 5, 4, 0, 3));
-        System.out.println(i1.orderCrossover(i2).get(0).getTour());
-        System.out.println(i1.orderCrossover(i2).get(1).getTour());
+//        System.out.println(i1.cycleCrossover(i2).get(0).getTour());
+//        System.out.println(i1.cycleCrossover(i2).get(1).getTour());
+//        System.out.println(i1.inversion().getTour());
     }
 
 }

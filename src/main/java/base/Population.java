@@ -143,7 +143,6 @@ public class Population {
         List<Individual> newIndividuals = new ArrayList<>();
         newIndividuals.addAll(parentList.subList(0, eliteNum));
         newIndividuals.addAll(offspringList.subList(0, individuals.size() - eliteNum));
-//        System.out.println("individuals.size() = " + newIndividuals.size());
         return new Population(newIndividuals);
     }
 

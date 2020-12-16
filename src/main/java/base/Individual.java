@@ -212,7 +212,6 @@ public class Individual {
                     i = position[mapping[i]];
                 }
                 cycles.add(cycle);
-//                System.out.println("cycle = " + cycle);
             }
             index++;
         }

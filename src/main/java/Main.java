@@ -13,7 +13,6 @@ public class Main {
     private static final String dataFilePath = "src/main/resources/data/";
     private static final List<File> fileList = new ArrayList<>();
     private static final List<Integer> populationSizeList = new ArrayList<>();
-    private static final List<SimpleGeneticAlgo> AlgoList = new ArrayList<>();
 
     public static void init() {
         fileList.add(new File(dataFilePath + "eil51.tsp"));

@@ -13,8 +13,6 @@ import java.util.Random;
 
 public class SGAlgo3 extends SimpleGeneticAlgo {
 
-    private final Random random = new Random();
-
     private final double probCross = 0.8;
     private final double probMutation = 0.1;
 
@@ -37,7 +35,6 @@ public class SGAlgo3 extends SimpleGeneticAlgo {
         while (true) {
             List<Individual> offsprings = new ArrayList<>();
             Population matingPool = population.tournamentSelection(problem, sampleNum);
-//            Population matingPool = population.fitnessProportionate(problem);
             List<Individual> matingIndividuals = matingPool.getIndividuals();
             for (int i = 0; i < individualNum; i += 2) {
                 double randNum = Math.random();
@@ -58,7 +55,6 @@ public class SGAlgo3 extends SimpleGeneticAlgo {
             population = matingPool.elitism(problem, new Population(offsprings), (int) (individualNum * 0.1));
             leastDis = Math.min(leastDis, population.getLeastTourDis(problem));
             generationCnt++;
-//            System.out.println("generationCnt = " + generationCnt);
             if (generationCnt % 100 == 0) {
                 writeLog(generationCnt, population, leastDis, problem);
             }

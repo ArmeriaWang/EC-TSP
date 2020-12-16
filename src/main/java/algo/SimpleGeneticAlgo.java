@@ -47,6 +47,8 @@ public abstract class SimpleGeneticAlgo {
         fileWriter.write(String.format("  least  : %d\n", population.getLeastTourDis(problem)));
         fileWriter.write(String.format("  mean   : %d\n", population.getMeanTourDis(problem)));
         fileWriter.write(String.format("  std dev: %d\n\n", population.getStandardDeviationTourDis(problem)));
+        fileWriter.flush();
+        fileWriter.close();
     }
 
 }

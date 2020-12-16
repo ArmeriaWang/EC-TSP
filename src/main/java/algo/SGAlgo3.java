@@ -57,7 +57,7 @@ public class SGAlgo3 extends SimpleGeneticAlgo{
                 writeLog(generationCnt, population, problem);
             }
             if (generationCnt > generationCntUpper) {
-                return population.getLeast(problem);
+                return population.getLeastTourDis(problem);
             }
         }
     }

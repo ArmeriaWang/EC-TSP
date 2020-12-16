@@ -44,9 +44,9 @@ public abstract class SimpleGeneticAlgo {
     protected void writeLog(int generationCnt, Population population, TSPProblem problem) throws IOException {
         FileWriter fileWriter = new FileWriter(logFile, true);
         fileWriter.write(String.format("After %d generations:\n", generationCnt));
-        fileWriter.write(String.format("  least  : %d\n", population.getLeast(problem)));
-        fileWriter.write(String.format("  mean   : %d\n", population.getMean(problem)));
-        fileWriter.write(String.format("  std dev: %d\n\n", population.getStandardDeviation(problem)));
+        fileWriter.write(String.format("  least  : %d\n", population.getLeastTourDis(problem)));
+        fileWriter.write(String.format("  mean   : %d\n", population.getMeanTourDis(problem)));
+        fileWriter.write(String.format("  std dev: %d\n\n", population.getStandardDeviationTourDis(problem)));
     }
 
 }

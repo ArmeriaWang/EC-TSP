@@ -128,12 +128,12 @@ public class Individual {
         return null;
     }
 
-    public int getPathDistance(TSPProblem problem) {
-        int pathDistance = problem.getDistance(0, problem.getCityNum() - 1);
+    public int getTourDistance(TSPProblem problem) {
+        int tourDistance = problem.getDistance(tour.get(0), tour.get(problem.getCityNum() - 1));
         for (int i = 1; i < problem.getCityNum(); i++) {
-            pathDistance += problem.getDistance(i - 1, i);
+            tourDistance += problem.getDistance(tour.get(i - 1), tour.get(i));
         }
-        return pathDistance;
+        return tourDistance;
     }
 
 }

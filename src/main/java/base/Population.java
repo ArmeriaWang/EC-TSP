@@ -25,27 +25,27 @@ public class Population {
         return new ArrayList<>(individuals);
     }
 
-    public int getLeast(TSPProblem problem) {
-        int leastDis = individuals.get(0).getPathDistance(problem);
+    public int getLeastTourDis(TSPProblem problem) {
+        int leastDis = individuals.get(0).getTourDistance(problem);
         for (Individual individual : individuals) {
-            leastDis = Math.min(leastDis, individual.getPathDistance(problem));
+            leastDis = Math.min(leastDis, individual.getTourDistance(problem));
         }
         return leastDis;
     }
 
-    public int getMean(TSPProblem problem) {
+    public int getMeanTourDis(TSPProblem problem) {
         int sum = 0;
         for (Individual individual : individuals) {
-            sum += individual.getPathDistance(problem);
+            sum += individual.getTourDistance(problem);
         }
         return sum / individuals.size();
     }
 
-    public int getStandardDeviation(TSPProblem problem) {
-        int mean = getMean(problem);
+    public int getStandardDeviationTourDis(TSPProblem problem) {
+        int mean = getMeanTourDis(problem);
         int sd = 0;
         for (Individual individual : individuals) {
-            sd += Math.abs(mean - individual.getPathDistance(problem));
+            sd += Math.abs(mean - individual.getTourDistance(problem));
         }
         return sd;
     }

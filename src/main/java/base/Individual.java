@@ -19,7 +19,7 @@ public class Individual {
      * @param cityNum number of cities
      */
     public Individual(int cityNum) {
-        List<Integer> tourList = new ArrayList<Integer>();
+        List<Integer> tourList = new ArrayList<>();
         for (int i = 0; i < cityNum; i++) {
             tourList.add(i);
         }
@@ -134,6 +134,10 @@ public class Individual {
             tourDistance += problem.getDistance(tour.get(i - 1), tour.get(i));
         }
         return tourDistance;
+    }
+
+    public double getFitness(TSPProblem problem, int sum) {
+        return 1.0 * sum / getTourDistance(problem);
     }
 
 }

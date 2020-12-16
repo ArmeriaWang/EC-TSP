@@ -22,7 +22,7 @@ public class SGAlgo3 extends SimpleGeneticAlgo{
     }
 
     @Override
-    public int solve(TSPProblem problem) throws IOException {
+    public void solve(TSPProblem problem) throws IOException {
         SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
         String sysTime = sf.format(System.currentTimeMillis());
         logName = problem.getName() + "_algo3_" + sysTime + ".txt";
@@ -32,7 +32,7 @@ public class SGAlgo3 extends SimpleGeneticAlgo{
         int generationCnt = 1;
         while (true) {
             List<Individual> offsprings = new ArrayList<>();
-            Population matingPool = population.elitism(problem);
+            Population matingPool = population.fitnessProportionate(problem);
             List<Individual> matingIndividuals = matingPool.getIndividuals();
             for (int i = 0; i < individualNum; i += 2) {
                 double randNum = Math.random();
@@ -51,13 +51,14 @@ public class SGAlgo3 extends SimpleGeneticAlgo{
                     offsprings.set(i, offsprings.get(i).scramble());
                 }
             }
-            population = new Population(offsprings);
+            population = matingPool.elitism(problem, new Population(offsprings), (int) (individualNum * 0.1));
             generationCnt++;
             if (generationCnt % 100 == 0) {
                 writeLog(generationCnt, population, problem);
             }
             if (generationCnt > generationCntUpper) {
-                return population.getLeastTourDis(problem);
+                population.getLeastTourDis(problem);
+                return;
             }
         }
     }

@@ -33,7 +33,7 @@ public abstract class SimpleGeneticAlgo {
         }
     }
 
-    public abstract int solve(TSPProblem problem) throws IOException;
+    public abstract void solve(TSPProblem problem) throws IOException;
 
     protected void createLog(String logName) throws IOException {
         logFile = new File(logPath + logName);

@@ -7,7 +7,6 @@ import java.util.*;
 public class Population {
 
     private final List<Individual> individuals;
-    private final Random random = new Random();
 
     public Population(int individualNum, int cityNum) {
         individuals = new ArrayList<>();
@@ -28,6 +27,9 @@ public class Population {
         return individuals.size();
     }
 
+    /**
+     * return the fitness of the current optimal solution
+     */
     public int getLeastTourDis(TSPProblem problem) {
         int leastDis = individuals.get(0).getTourDistance(problem);
         for (Individual individual : individuals) {
@@ -36,6 +38,9 @@ public class Population {
         return leastDis;
     }
 
+    /**
+     * return the sum of fitness of all possible optimal solution(individuals)
+     */
     public int getSumTourDis(TSPProblem problem) {
         int sum = 0;
         for (Individual individual : individuals) {
@@ -44,10 +49,16 @@ public class Population {
         return sum;
     }
 
+    /**
+     * return the mean of all individuals
+     */
     public int getMeanTourDis(TSPProblem problem) {
         return getSumTourDis(problem) / individuals.size();
     }
 
+    /**
+     * return the standard deviation of all individuals
+     */
     public int getStandardDeviationTourDis(TSPProblem problem) {
         int mean = getMeanTourDis(problem);
         int sd = 0;
@@ -57,6 +68,9 @@ public class Population {
         return sd;
     }
 
+    /**
+     * return the map of each individuals and its corresponding fitness
+     */
     public Map<Individual, Integer> getIndividualDistanceMap(TSPProblem problem) {
         Map<Individual, Integer> result = new HashMap<>();
         for (Individual individual : individuals) {
@@ -73,6 +87,9 @@ public class Population {
         return result;
     }
 
+    /**
+     * the fitness selection algo
+     */
     public Population fitnessProportionate(TSPProblem problem) {
         List<Double> fitnessList = new ArrayList<>();
         double fitnessSum = 0;
@@ -111,6 +128,9 @@ public class Population {
         return new Population(parents);
     }
 
+    /**
+     * the tournament selection algo
+     */
     public Population tournamentSelection(TSPProblem problem, int sampleNum) {
         List<Individual> parents = new ArrayList<>();
         List<Individual> candidates;
@@ -133,18 +153,22 @@ public class Population {
         return new Population(parents);
     }
 
+    /**
+     * the elitism selection algo
+     */
     public Population elitism(TSPProblem problem, Population offsprings, int eliteNum) {
         List<Individual> parentList = new ArrayList<>(individuals);
         List<Individual> offspringList = offsprings.getIndividuals();
         Map<Individual, Integer> parentMap = getIndividualDistanceMap(problem);
+        // sort the fitness of all individuals
         parentList.sort(new IndividualComparator(parentMap));
         Map<Individual, Integer> offspringMap = offsprings.getIndividualDistanceMap(problem);
         offspringList.sort(new IndividualComparator(offspringMap));
         List<Individual> newIndividuals = new ArrayList<>();
+        // choose elite num individuals
         newIndividuals.addAll(parentList.subList(0, eliteNum));
         newIndividuals.addAll(offspringList.subList(0, individuals.size() - eliteNum));
         return new Population(newIndividuals);
     }
 
 }
-

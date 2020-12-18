@@ -1,4 +1,5 @@
 ﻿video report link: https://v.youku.com/v_show/id_XNTAxMjcwODU1Ng==.html
+github link: https://github.com/ArmeriaWang/EC-TSP
 
 instruction to run the code:
 Run Main.java

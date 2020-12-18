@@ -9,8 +9,11 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
+
+/**
+ * tournamentSelection + partiallyMappedCrossover + insert mutation
+ */
 public class SGAlgo2 extends SimpleGeneticAlgo{
 
     private final double probCross = 0.8;
@@ -19,6 +22,7 @@ public class SGAlgo2 extends SimpleGeneticAlgo{
     protected SGAlgo2(int IndividualNum, int generationCntUpper, ResultRecorder resultRecorder) {
         super(IndividualNum, generationCntUpper, resultRecorder);
     }
+
     @Override
     public void solve(TSPProblem problem) throws IOException {
         resultRecorder.writeNewRun(problem, individualNum);
@@ -31,10 +35,12 @@ public class SGAlgo2 extends SimpleGeneticAlgo{
         int generationCnt = 1;
         int leastDis = population.getLeastTourDis(problem);
         int sampleNum = (int) Math.sqrt(individualNum);
-        while (true) {
+        while (true) {  //iterate
             List<Individual> offsprings = new ArrayList<>();
+            //select parents
             Population matingPool = population.tournamentSelection(problem, sampleNum);
             List<Individual> matingIndividuals = matingPool.getIndividuals();
+            //crossover
             for (int i = 0; i < individualNum; i += 2) {
                 double randNum = Math.random();
                 if (randNum < probCross) {
@@ -47,11 +53,13 @@ public class SGAlgo2 extends SimpleGeneticAlgo{
                     offsprings.add(matingIndividuals.get(i + 1));
                 }
             }
+            //mutation
             for (int i = 0; i < offsprings.size(); i++) {
                 while (Math.random() < probMutation) {
                     offsprings.set(i, offsprings.get(i).insert());
                 }
             }
+            //select survivors
             population = new Population(offsprings);
             leastDis = Math.min(leastDis, population.getLeastTourDis(problem));
             generationCnt++;

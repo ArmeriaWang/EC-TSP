@@ -8,6 +8,10 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+
+/**
+ * An abstract class for all 3 algorithms
+ */
 public abstract class SimpleGeneticAlgo {
 
     protected final int individualNum;

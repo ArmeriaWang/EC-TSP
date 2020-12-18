@@ -60,10 +60,16 @@ public class Individual {
         return tourDistance;
     }
 
+    /**
+     * return the fitness
+     */
     public double getFitness(TSPProblem problem, int sum) {
         return 1.0 * sum / getTourDistance(problem);
     }
 
+    /**
+     * Swap mutation for permutations
+     */
     public Individual swap() {
         List<Integer> newTour = new ArrayList<>(tour);
         int[] randomPair = getRandomPair(newTour.size());
@@ -75,6 +81,9 @@ public class Individual {
         return new Individual(newTour);
     }
 
+    /**
+     * Insert mutation for permutations
+     */
     public Individual insert() {
         List<Integer> newTour = new ArrayList<>(tour);
         // pick two allele values at random
@@ -88,6 +97,9 @@ public class Individual {
         return new Individual(newTour);
     }
 
+    /**
+     * Inversion mutation for permutations
+     */
     public Individual inversion() {
         List<Integer> newTour = new ArrayList<>(tour);
         //pick two allele values at random
@@ -104,6 +116,9 @@ public class Individual {
         return new Individual(newTour);
     }
 
+    /**
+     * Scramble mutation for permutations
+     */
     public Individual scramble() {
         List<Integer> newTour = new ArrayList<>(tour);
         int subsetSize = random.nextInt(newTour.size()) + 1;
@@ -125,6 +140,9 @@ public class Individual {
         return new Individual(newTour);
     }
 
+    /**
+     * order crossover algo for permutations
+     */
     public List<Individual> orderCrossover(Individual o) {
         int[] randomPair = getRandomPair(tour.size());
         int l = randomPair[0];
@@ -154,6 +172,9 @@ public class Individual {
         return new Individual(child);
     }
 
+    /**
+     * Partially Mapped Crossover for permutations
+     */
     public List<Individual> partiallyMappedCrossover(Individual o) {
         int[] randomPair = getRandomPair(tour.size());
         int l = randomPair[0];
@@ -184,6 +205,9 @@ public class Individual {
         return new Individual(child);
     }
 
+    /**
+     * Cycle crossover algo for permutations
+     */
     public List<Individual> cycleCrossover(Individual o) {
         Individual i1 = singleCycleCrossover(o);
         Individual i2 = o.singleCycleCrossover(this);
@@ -226,17 +250,149 @@ public class Individual {
         return new Individual(child);
     }
 
-    public List<Individual> edgeRecombination(Individual o) {
-        // TODO
-        return null;
+    /**
+     * Edge Recombination for permutations
+     */
+    public Individual[] EdgeRecombinationCrossover(Individual i1, Individual i2) {
+
+        List<Integer> l1 = i1.getTour();
+        List<Integer> l2 = i2.getTour();
+        int len = l1.size();
+
+        int[] children = new int[len];
+        Arrays.fill(children, -1);
+
+        // construct a table
+        Map<Integer, Set<EdgeElement>> table = EdgeTable(i1, i2);  // all Integers represent element
+        // pick an initial element at random
+        int start = random.nextInt(len) + 1;
+        children[0] = start;
+        // update table
+        table.remove(start);
+        for (Set<EdgeElement> s : table.values()) {
+            for (EdgeElement e : s) {
+                if (e.number == start) {
+                    s.remove(e);
+                }
+            }
+        }
+
+        for (int i = 1; i < len; i++) {
+            Set<EdgeElement> set = table.get(start);
+            boolean flag = false;  // if there is a common
+            int min = len;
+            int min_number = Integer.MAX_VALUE;
+            for (EdgeElement e : set) {
+                if (e.common) {
+                    start = e.number;
+                    children[i] = e.number;
+                    flag = true;
+                    break;
+                }
+                if (table.get(e.number).size() < min) {
+                    min = table.get(e.number).size();
+                    min_number = e.number;
+                }
+            }
+            if (!flag) {
+                start = min_number;
+                children[i] = start;
+            }
+
+            // update table
+            table.remove(start);
+            for (Set<EdgeElement> s : table.values()) {
+                for (EdgeElement e : s) {
+                    if (e.number == start) {
+                        s.remove(e);
+                    }
+                }
+            }
+        }
+
+        Individual[] individuals = new Individual[1];
+        List<Integer> childrenList = new ArrayList<>() {{
+            for (int i = 0; i < len; i++) {
+                add(children[i]);
+            }
+        }};
+        individuals[0] = new Individual(childrenList);
+        return individuals;
     }
 
-    public static void main(String[] args) {
-        Individual i1 = new Individual(List.of(0, 1, 2, 3, 4, 5, 6, 7, 8));
-        Individual i2 = new Individual(List.of(8, 2, 6, 7, 1, 5, 4, 0, 3));
-//        System.out.println(i1.cycleCrossover(i2).get(0).getTour());
-//        System.out.println(i1.cycleCrossover(i2).get(1).getTour());
-//        System.out.println(i1.inversion().getTour());
+    private Map<Integer, Set<EdgeElement>> EdgeTable(Individual i1, Individual i2) {
+        List<Integer> l1 = i1.getTour();
+        List<Integer> l2 = i2.getTour();
+        int len = l1.size();
+        Map<Integer, Set<EdgeElement>> table = new HashMap<>();
+        // put l1 in table
+        for (int i = 0; i < len; i++) {
+            Set<EdgeElement> set = new HashSet<>();
+            if (i == 0) {
+                set.add(new EdgeElement(l1.get(1), false));
+                set.add(new EdgeElement(l1.get(len - 1), false));
+            }
+            else if (i == len - 1) {
+                set.add(new EdgeElement(l1.get(0), false));
+                set.add(new EdgeElement(l1.get(len - 2), false));
+            }
+            else {
+                set.add(new EdgeElement(l1.get(i - 1), false));
+                set.add(new EdgeElement(l1.get(i + 1), false));
+            }
+            table.put(l1.get(i), set);
+        }
+        // put l2 in table
+        for (int i = 0; i < len; i++) {
+            Set<EdgeElement> set = table.get(l2.get(i));
+            int neigh1, neigh2;
+            if (i == 0) {
+                neigh1 = l2.get(1);
+                neigh2 = l2.get(len - 1);
+            }
+            else if (i == len - 1) {
+                neigh1 = l2.get(0);
+                neigh2 = l2.get(len - 2);
+            }
+            else {
+                neigh1 = l2.get(i - 1);
+                neigh2 = l2.get(i + 1);
+            }
+            boolean flag1 = false;
+            boolean flag2 = false;
+            for (EdgeElement e : set) {
+                if (e.number == neigh1) {
+                    e.setCommon(true);
+                    flag1 = true;
+                }
+                if (e.number == neigh2) {
+                    e.setCommon(true);
+                    flag2 = true;
+                }
+            }
+            if (!flag1) {
+                set.add(new EdgeElement(neigh1, false));
+            }
+            if (!flag2) {
+                set.add(new EdgeElement(neigh2, false));
+            }
+            table.put(l2.get(i), set);
+        }
+        return table;
+    }
+
+    static class EdgeElement {
+        int number;
+        boolean common;
+
+        public EdgeElement(int number, boolean common) {
+            this.number = number;
+            this.common = common;
+        }
+
+        public void setCommon(boolean common) {
+            this.common = common;
+        }
     }
 
 }

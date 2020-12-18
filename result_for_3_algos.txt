@@ -1,0 +1,2649 @@
+Algo1
+
+
+Instance name: eil51
+Population size: 10
+
+  After 5000 generations:
+    least  : 676
+    mean   : 696
+    std dev: 249
+  least until now: 669
+
+  After 10000 generations:
+    least  : 651
+    mean   : 651
+    std dev: 0
+  least until now: 651
+
+  After 20000 generations:
+    least  : 651
+    mean   : 667
+    std dev: 261
+  least until now: 651
+
+
+Instance name: eil51
+Population size: 20
+
+  After 5000 generations:
+    least  : 501
+    mean   : 509
+    std dev: 291
+  least until now: 501
+
+  After 10000 generations:
+    least  : 501
+    mean   : 530
+    std dev: 939
+  least until now: 501
+
+  After 20000 generations:
+    least  : 501
+    mean   : 506
+    std dev: 178
+  least until now: 501
+
+
+Instance name: eil51
+Population size: 50
+
+  After 5000 generations:
+    least  : 531
+    mean   : 549
+    std dev: 1430
+  least until now: 531
+
+  After 10000 generations:
+    least  : 531
+    mean   : 542
+    std dev: 983
+  least until now: 531
+
+  After 20000 generations:
+    least  : 531
+    mean   : 535
+    std dev: 432
+  least until now: 531
+
+
+Instance name: eil51
+Population size: 100
+
+  After 5000 generations:
+    least  : 533
+    mean   : 546
+    std dev: 2320
+  least until now: 533
+
+  After 10000 generations:
+    least  : 533
+    mean   : 547
+    std dev: 2510
+  least until now: 533
+
+  After 20000 generations:
+    least  : 533
+    mean   : 538
+    std dev: 1006
+  least until now: 533
+
+
+Instance name: eil76
+Population size: 10
+
+  After 5000 generations:
+    least  : 884
+    mean   : 884
+    std dev: 0
+  least until now: 881
+
+  After 10000 generations:
+    least  : 838
+    mean   : 841
+    std dev: 61
+  least until now: 838
+
+  After 20000 generations:
+    least  : 801
+    mean   : 827
+    std dev: 423
+  least until now: 801
+
+
+Instance name: eil76
+Population size: 20
+
+  After 5000 generations:
+    least  : 776
+    mean   : 792
+    std dev: 580
+  least until now: 776
+
+  After 10000 generations:
+    least  : 755
+    mean   : 763
+    std dev: 299
+  least until now: 755
+
+  After 20000 generations:
+    least  : 754
+    mean   : 770
+    std dev: 589
+  least until now: 754
+
+
+Instance name: eil76
+Population size: 50
+
+  After 5000 generations:
+    least  : 775
+    mean   : 788
+    std dev: 1164
+  least until now: 775
+
+  After 10000 generations:
+    least  : 775
+    mean   : 781
+    std dev: 586
+  least until now: 775
+
+  After 20000 generations:
+    least  : 775
+    mean   : 781
+    std dev: 584
+  least until now: 775
+
+
+Instance name: eil76
+Population size: 100
+
+  After 5000 generations:
+    least  : 777
+    mean   : 794
+    std dev: 3007
+  least until now: 777
+
+  After 10000 generations:
+    least  : 777
+    mean   : 784
+    std dev: 1309
+  least until now: 777
+
+  After 20000 generations:
+    least  : 777
+    mean   : 780
+    std dev: 658
+  least until now: 777
+
+
+Instance name: eil101
+Population size: 10
+
+  After 5000 generations:
+    least  : 1276
+    mean   : 1280
+    std dev: 77
+  least until now: 1262
+
+  After 10000 generations:
+    least  : 1137
+    mean   : 1137
+    std dev: 0
+  least until now: 1137
+
+  After 20000 generations:
+    least  : 998
+    mean   : 1015
+    std dev: 276
+  least until now: 998
+
+
+Instance name: eil101
+Population size: 20
+
+  After 5000 generations:
+    least  : 1046
+    mean   : 1046
+    std dev: 0
+  least until now: 1046
+
+  After 10000 generations:
+    least  : 1016
+    mean   : 1029
+    std dev: 393
+  least until now: 1016
+
+  After 20000 generations:
+    least  : 983
+    mean   : 996
+    std dev: 448
+  least until now: 983
+
+
+Instance name: eil101
+Population size: 50
+
+  After 5000 generations:
+    least  : 848
+    mean   : 862
+    std dev: 1197
+  least until now: 848
+
+  After 10000 generations:
+    least  : 831
+    mean   : 854
+    std dev: 1786
+  least until now: 831
+
+  After 20000 generations:
+    least  : 804
+    mean   : 815
+    std dev: 1044
+  least until now: 804
+
+
+Instance name: eil101
+Population size: 100
+
+  After 5000 generations:
+    least  : 903
+    mean   : 918
+    std dev: 2541
+  least until now: 903
+
+  After 10000 generations:
+    least  : 889
+    mean   : 898
+    std dev: 1708
+  least until now: 889
+
+  After 20000 generations:
+    least  : 889
+    mean   : 906
+    std dev: 2934
+  least until now: 889
+
+
+Instance name: st70
+Population size: 10
+
+  After 5000 generations:
+    least  : 1123
+    mean   : 1139
+    std dev: 290
+  least until now: 1123
+
+  After 10000 generations:
+    least  : 1084
+    mean   : 1084
+    std dev: 0
+  least until now: 1084
+
+  After 20000 generations:
+    least  : 1057
+    mean   : 1103
+    std dev: 745
+  least until now: 1057
+
+
+Instance name: st70
+Population size: 20
+
+  After 5000 generations:
+    least  : 1110
+    mean   : 1135
+    std dev: 854
+  least until now: 1109
+
+  After 10000 generations:
+    least  : 1077
+    mean   : 1101
+    std dev: 817
+  least until now: 1077
+
+  After 20000 generations:
+    least  : 1070
+    mean   : 1072
+    std dev: 90
+  least until now: 1070
+
+
+Instance name: st70
+Population size: 50
+
+  After 5000 generations:
+    least  : 1123
+    mean   : 1138
+    std dev: 1373
+  least until now: 1123
+
+  After 10000 generations:
+    least  : 1123
+    mean   : 1127
+    std dev: 415
+  least until now: 1123
+
+  After 20000 generations:
+    least  : 1123
+    mean   : 1130
+    std dev: 694
+  least until now: 1123
+
+
+Instance name: st70
+Population size: 100
+
+  After 5000 generations:
+    least  : 1026
+    mean   : 1038
+    std dev: 2213
+  least until now: 1026
+
+  After 10000 generations:
+    least  : 1023
+    mean   : 1036
+    std dev: 2348
+  least until now: 1023
+
+  After 20000 generations:
+    least  : 1023
+    mean   : 1040
+    std dev: 3054
+  least until now: 1023
+
+
+Instance name: kroA100
+Population size: 10
+
+  After 5000 generations:
+    least  : 56006
+    mean   : 56640
+    std dev: 11420
+  least until now: 56006
+
+  After 10000 generations:
+    least  : 47897
+    mean   : 48210
+    std dev: 5635
+  least until now: 47897
+
+  After 20000 generations:
+    least  : 42369
+    mean   : 42369
+    std dev: 0
+  least until now: 42369
+
+
+Instance name: kroA100
+Population size: 20
+
+  After 5000 generations:
+    least  : 55416
+    mean   : 55644
+    std dev: 8683
+  least until now: 55416
+
+  After 10000 generations:
+    least  : 49833
+    mean   : 50991
+    std dev: 39377
+  least until now: 49833
+
+  After 20000 generations:
+    least  : 42829
+    mean   : 43011
+    std dev: 6928
+  least until now: 42829
+
+
+Instance name: kroA100
+Population size: 50
+
+  After 5000 generations:
+    least  : 39754
+    mean   : 40193
+    std dev: 41294
+  least until now: 39754
+
+  After 10000 generations:
+    least  : 38962
+    mean   : 39765
+    std dev: 70664
+  least until now: 38962
+
+  After 20000 generations:
+    least  : 38452
+    mean   : 39072
+    std dev: 54413
+  least until now: 38452
+
+
+Instance name: kroA100
+Population size: 100
+
+  After 5000 generations:
+    least  : 45403
+    mean   : 45966
+    std dev: 101542
+  least until now: 45403
+
+  After 10000 generations:
+    least  : 45403
+    mean   : 46238
+    std dev: 145387
+  least until now: 45403
+
+  After 20000 generations:
+    least  : 45403
+    mean   : 45905
+    std dev: 91041
+  least until now: 45403
+
+
+Instance name: kroC100
+Population size: 10
+
+  After 5000 generations:
+    least  : 56536
+    mean   : 57261
+    std dev: 13050
+  least until now: 56432
+
+  After 10000 generations:
+    least  : 48599
+    mean   : 49557
+    std dev: 15669
+  least until now: 48594
+
+  After 20000 generations:
+    least  : 45687
+    mean   : 46703
+    std dev: 16992
+  least until now: 45662
+
+
+Instance name: kroC100
+Population size: 20
+
+  After 5000 generations:
+    least  : 53969
+    mean   : 54274
+    std dev: 10992
+  least until now: 53969
+
+  After 10000 generations:
+    least  : 52090
+    mean   : 52744
+    std dev: 22250
+  least until now: 52090
+
+  After 20000 generations:
+    least  : 51653
+    mean   : 51889
+    std dev: 8976
+  least until now: 51653
+
+
+Instance name: kroC100
+Population size: 50
+
+  After 5000 generations:
+    least  : 47154
+    mean   : 48090
+    std dev: 80503
+  least until now: 47154
+
+  After 10000 generations:
+    least  : 47098
+    mean   : 47876
+    std dev: 68491
+  least until now: 47098
+
+  After 20000 generations:
+    least  : 47098
+    mean   : 47632
+    std dev: 48064
+  least until now: 47098
+
+
+Instance name: kroC100
+Population size: 100
+
+  After 5000 generations:
+    least  : 37349
+    mean   : 37961
+    std dev: 111451
+  least until now: 37349
+
+  After 10000 generations:
+    least  : 37349
+    mean   : 37749
+    std dev: 74442
+  least until now: 37349
+
+  After 20000 generations:
+    least  : 37349
+    mean   : 37686
+    std dev: 62062
+  least until now: 37349
+
+
+Instance name: kroD100
+Population size: 10
+
+  After 5000 generations:
+    least  : 52422
+    mean   : 53172
+    std dev: 12515
+  least until now: 52422
+
+  After 10000 generations:
+    least  : 45554
+    mean   : 46900
+    std dev: 21544
+  least until now: 45554
+
+  After 20000 generations:
+    least  : 42585
+    mean   : 42720
+    std dev: 2432
+  least until now: 42585
+
+
+Instance name: kroD100
+Population size: 20
+
+  After 5000 generations:
+    least  : 50414
+    mean   : 50414
+    std dev: 0
+  least until now: 50319
+
+  After 10000 generations:
+    least  : 46642
+    mean   : 47061
+    std dev: 15087
+  least until now: 46642
+
+  After 20000 generations:
+    least  : 45525
+    mean   : 46455
+    std dev: 29768
+  least until now: 45525
+
+
+Instance name: kroD100
+Population size: 50
+
+  After 5000 generations:
+    least  : 41880
+    mean   : 42196
+    std dev: 29660
+  least until now: 41880
+
+  After 10000 generations:
+    least  : 41278
+    mean   : 41859
+    std dev: 52198
+  least until now: 41278
+
+  After 20000 generations:
+    least  : 40987
+    mean   : 41537
+    std dev: 47310
+  least until now: 40987
+
+
+Instance name: kroD100
+Population size: 100
+
+  After 5000 generations:
+    least  : 36869
+    mean   : 38081
+    std dev: 203231
+  least until now: 36869
+
+  After 10000 generations:
+    least  : 36503
+    mean   : 37395
+    std dev: 149950
+  least until now: 36503
+
+  After 20000 generations:
+    least  : 36494
+    mean   : 37031
+    std dev: 95728
+  least until now: 36494
+
+
+Instance name: lin105
+Population size: 10
+
+  After 5000 generations:
+    least  : 40384
+    mean   : 42541
+    std dev: 28950
+  least until now: 40384
+
+  After 10000 generations:
+    least  : 39594
+    mean   : 40738
+    std dev: 16053
+  least until now: 39417
+
+  After 20000 generations:
+    least  : 36855
+    mean   : 38228
+    std dev: 14897
+  least until now: 36855
+
+
+Instance name: lin105
+Population size: 20
+
+  After 5000 generations:
+    least  : 34128
+    mean   : 34128
+    std dev: 0
+  least until now: 34128
+
+  After 10000 generations:
+    least  : 29930
+    mean   : 30146
+    std dev: 8224
+  least until now: 29930
+
+  After 20000 generations:
+    least  : 28582
+    mean   : 28873
+    std dev: 10197
+  least until now: 28582
+
+
+Instance name: lin105
+Population size: 50
+
+  After 5000 generations:
+    least  : 29415
+    mean   : 29704
+    std dev: 26609
+  least until now: 29415
+
+  After 10000 generations:
+    least  : 27255
+    mean   : 27764
+    std dev: 42799
+  least until now: 27255
+
+  After 20000 generations:
+    least  : 27217
+    mean   : 27779
+    std dev: 51753
+  least until now: 27217
+
+
+Instance name: lin105
+Population size: 100
+
+  After 5000 generations:
+    least  : 25869
+    mean   : 26430
+    std dev: 99890
+  least until now: 25869
+
+  After 10000 generations:
+    least  : 25750
+    mean   : 25982
+    std dev: 42287
+  least until now: 25750
+
+  After 20000 generations:
+    least  : 24830
+    mean   : 25324
+    std dev: 87932
+  least until now: 24830
+
+
+Instance name: pcb442
+Population size: 10
+
+  After 5000 generations:
+    least  : 347401
+    mean   : 347733
+    std dev: 5982
+  least until now: 347401
+
+  After 10000 generations:
+    least  : 293564
+    mean   : 294094
+    std dev: 9543
+  least until now: 293564
+
+  After 20000 generations:
+    least  : 252220
+    mean   : 253102
+    std dev: 14113
+  least until now: 252220
+
+
+Instance name: pcb442
+Population size: 20
+
+  After 5000 generations:
+    least  : 278765
+    mean   : 279282
+    std dev: 17585
+  least until now: 278765
+
+  After 10000 generations:
+    least  : 244548
+    mean   : 244548
+    std dev: 0
+  least until now: 244548
+
+  After 20000 generations:
+    least  : 207176
+    mean   : 208422
+    std dev: 42375
+  least until now: 207176
+
+
+Instance name: pcb442
+Population size: 50
+
+  After 5000 generations:
+    least  : 217788
+    mean   : 218473
+    std dev: 60320
+  least until now: 217788
+
+  After 10000 generations:
+    least  : 193269
+    mean   : 193966
+    std dev: 61383
+  least until now: 193269
+
+  After 20000 generations:
+    least  : 177196
+    mean   : 178044
+    std dev: 71256
+  least until now: 177196
+
+
+Instance name: pcb442
+Population size: 100
+
+  After 5000 generations:
+    least  : 184054
+    mean   : 184739
+    std dev: 124739
+  least until now: 184054
+
+  After 10000 generations:
+    least  : 163194
+    mean   : 163543
+    std dev: 64259
+  least until now: 163194
+
+  After 20000 generations:
+    least  : 145460
+    mean   : 146435
+    std dev: 167708
+  least until now: 145460
+
+
+Instance name: pr2392
+Population size: 10
+
+  After 5000 generations:
+    least  : 9613124
+    mean   : 9615125
+    std dev: 16707
+  least until now: 9613124
+
+  After 10000 generations:
+    least  : 8415363
+    mean   : 8415363
+    std dev: 0
+  least until now: 8414281
+
+  After 20000 generations:
+    least  : 7208143
+    mean   : 7214021
+    std dev: 62346
+  least until now: 7207217
+
+
+Instance name: pr2392
+Population size: 20
+
+  After 5000 generations:
+    least  : 8059866
+    mean   : 8064365
+    std dev: 152968
+  least until now: 8059866
+
+  After 10000 generations:
+    least  : 6860919
+    mean   : 6860919
+    std dev: 0
+  least until now: 6860919
+
+  After 20000 generations:
+    least  : 5925800
+    mean   : 5926846
+    std dev: 37674
+  least until now: 5925800
+
+
+Instance name: pr2392
+Population size: 50
+
+  After 5000 generations:
+    least  : 6168311
+    mean   : 6168589
+    std dev: 26136
+  least until now: 6168311
+
+  After 10000 generations:
+    least  : 5281514
+    mean   : 5284547
+    std dev: 257335
+  least until now: 5281514
+
+  After 20000 generations:
+    least  : 4515923
+    mean   : 4517832
+    std dev: 168039
+  least until now: 4515923
+
+
+Instance name: pr2392
+Population size: 100
+
+  After 5000 generations:
+    least  : 4868486
+    mean   : 4871569
+    std dev: 528201
+  least until now: 4868486
+
+  After 10000 generations:
+    least  : 4185301
+    mean   : 4190590
+    std dev: 717740
+  least until now: 4185301
+
+  After 20000 generations:
+    least  : 3614222
+    mean   : 3616335
+    std dev: 367734
+  least until now: 3614222
+
+
+
+Algo2
+
+Instance name: eil51
+Population size: 10
+
+  After 5000 generations:
+    least  : 585
+    mean   : 591
+    std dev: 111
+  least until now: 577
+
+  After 10000 generations:
+    least  : 568
+    mean   : 574
+    std dev: 105
+  least until now: 568
+
+  After 20000 generations:
+    least  : 568
+    mean   : 572
+    std dev: 81
+  least until now: 568
+
+
+Instance name: eil51
+Population size: 20
+
+  After 5000 generations:
+    least  : 503
+    mean   : 509
+    std dev: 232
+  least until now: 503
+
+  After 10000 generations:
+    least  : 503
+    mean   : 512
+    std dev: 341
+  least until now: 503
+
+  After 20000 generations:
+    least  : 503
+    mean   : 510
+    std dev: 252
+  least until now: 503
+
+
+Instance name: eil51
+Population size: 50
+
+  After 5000 generations:
+    least  : 471
+    mean   : 479
+    std dev: 692
+  least until now: 471
+
+  After 10000 generations:
+    least  : 471
+    mean   : 479
+    std dev: 734
+  least until now: 471
+
+  After 20000 generations:
+    least  : 467
+    mean   : 469
+    std dev: 213
+  least until now: 467
+
+
+Instance name: eil51
+Population size: 100
+
+  After 5000 generations:
+    least  : 493
+    mean   : 495
+    std dev: 439
+  least until now: 493
+
+  After 10000 generations:
+    least  : 493
+    mean   : 500
+    std dev: 1281
+  least until now: 493
+
+  After 20000 generations:
+    least  : 493
+    mean   : 497
+    std dev: 790
+  least until now: 493
+
+
+Instance name: eil76
+Population size: 10
+
+  After 5000 generations:
+    least  : 880
+    mean   : 880
+    std dev: 0
+  least until now: 880
+
+  After 10000 generations:
+    least  : 812
+    mean   : 812
+    std dev: 0
+  least until now: 812
+
+  After 20000 generations:
+    least  : 691
+    mean   : 691
+    std dev: 0
+  least until now: 691
+
+
+Instance name: eil76
+Population size: 20
+
+  After 5000 generations:
+    least  : 705
+    mean   : 712
+    std dev: 274
+  least until now: 705
+
+  After 10000 generations:
+    least  : 692
+    mean   : 696
+    std dev: 149
+  least until now: 692
+
+  After 20000 generations:
+    least  : 689
+    mean   : 693
+    std dev: 160
+  least until now: 689
+
+
+Instance name: eil76
+Population size: 50
+
+  After 5000 generations:
+    least  : 735
+    mean   : 743
+    std dev: 714
+  least until now: 735
+
+  After 10000 generations:
+    least  : 735
+    mean   : 741
+    std dev: 547
+  least until now: 735
+
+  After 20000 generations:
+    least  : 735
+    mean   : 738
+    std dev: 321
+  least until now: 735
+
+
+Instance name: eil76
+Population size: 100
+
+  After 5000 generations:
+    least  : 677
+    mean   : 686
+    std dev: 1593
+  least until now: 677
+
+  After 10000 generations:
+    least  : 677
+    mean   : 682
+    std dev: 991
+  least until now: 677
+
+  After 20000 generations:
+    least  : 677
+    mean   : 683
+    std dev: 1106
+  least until now: 677
+
+
+Instance name: eil101
+Population size: 10
+
+  After 5000 generations:
+    least  : 1121
+    mean   : 1124
+    std dev: 60
+  least until now: 1110
+
+  After 10000 generations:
+    least  : 966
+    mean   : 966
+    std dev: 9
+  least until now: 966
+
+  After 20000 generations:
+    least  : 798
+    mean   : 812
+    std dev: 224
+  least until now: 796
+
+
+Instance name: eil101
+Population size: 20
+
+  After 5000 generations:
+    least  : 1025
+    mean   : 1035
+    std dev: 325
+  least until now: 1025
+
+  After 10000 generations:
+    least  : 891
+    mean   : 898
+    std dev: 259
+  least until now: 891
+
+  After 20000 generations:
+    least  : 818
+    mean   : 821
+    std dev: 120
+  least until now: 818
+
+
+Instance name: eil101
+Population size: 50
+
+  After 5000 generations:
+    least  : 803
+    mean   : 806
+    std dev: 284
+  least until now: 803
+
+  After 10000 generations:
+    least  : 795
+    mean   : 801
+    std dev: 552
+  least until now: 795
+
+  After 20000 generations:
+    least  : 783
+    mean   : 790
+    std dev: 641
+  least until now: 783
+
+
+Instance name: eil101
+Population size: 100
+
+  After 5000 generations:
+    least  : 917
+    mean   : 927
+    std dev: 1802
+  least until now: 917
+
+  After 10000 generations:
+    least  : 917
+    mean   : 922
+    std dev: 1007
+  least until now: 917
+
+  After 20000 generations:
+    least  : 917
+    mean   : 924
+    std dev: 1304
+  least until now: 917
+
+
+Instance name: st70
+Population size: 10
+
+  After 5000 generations:
+    least  : 1103
+    mean   : 1111
+    std dev: 152
+  least until now: 1098
+
+  After 10000 generations:
+    least  : 1035
+    mean   : 1035
+    std dev: 0
+  least until now: 1035
+
+  After 20000 generations:
+    least  : 903
+    mean   : 903
+    std dev: 0
+  least until now: 903
+
+
+Instance name: st70
+Population size: 20
+
+  After 5000 generations:
+    least  : 928
+    mean   : 928
+    std dev: 0
+  least until now: 928
+
+  After 10000 generations:
+    least  : 909
+    mean   : 918
+    std dev: 359
+  least until now: 909
+
+  After 20000 generations:
+    least  : 900
+    mean   : 900
+    std dev: 0
+  least until now: 900
+
+
+Instance name: st70
+Population size: 50
+
+  After 5000 generations:
+    least  : 957
+    mean   : 963
+    std dev: 584
+  least until now: 957
+
+  After 10000 generations:
+    least  : 947
+    mean   : 959
+    std dev: 1132
+  least until now: 947
+
+  After 20000 generations:
+    least  : 942
+    mean   : 951
+    std dev: 871
+  least until now: 942
+
+
+Instance name: st70
+Population size: 100
+
+  After 5000 generations:
+    least  : 884
+    mean   : 889
+    std dev: 975
+  least until now: 884
+
+  After 10000 generations:
+    least  : 884
+    mean   : 895
+    std dev: 2019
+  least until now: 884
+
+  After 20000 generations:
+    least  : 879
+    mean   : 889
+    std dev: 1882
+  least until now: 879
+
+
+Instance name: kroA100
+Population size: 10
+
+  After 5000 generations:
+    least  : 45042
+    mean   : 45318
+    std dev: 4968
+  least until now: 45037
+
+  After 10000 generations:
+    least  : 40683
+    mean   : 40683
+    std dev: 0
+  least until now: 40683
+
+  After 20000 generations:
+    least  : 37761
+    mean   : 37935
+    std dev: 2785
+  least until now: 37712
+
+
+Instance name: kroA100
+Population size: 20
+
+  After 5000 generations:
+    least  : 38624
+    mean   : 38837
+    std dev: 7686
+  least until now: 38624
+
+  After 10000 generations:
+    least  : 37059
+    mean   : 37709
+    std dev: 19577
+  least until now: 37059
+
+  After 20000 generations:
+    least  : 36403
+    mean   : 36403
+    std dev: 0
+  least until now: 36403
+
+
+Instance name: kroA100
+Population size: 50
+
+  After 5000 generations:
+    least  : 35713
+    mean   : 36086
+    std dev: 33587
+  least until now: 35713
+
+  After 10000 generations:
+    least  : 35564
+    mean   : 35727
+    std dev: 14672
+  least until now: 35564
+
+  After 20000 generations:
+    least  : 35564
+    mean   : 35785
+    std dev: 20807
+  least until now: 35564
+
+
+Instance name: kroA100
+Population size: 100
+
+  After 5000 generations:
+    least  : 34934
+    mean   : 35358
+    std dev: 74651
+  least until now: 34934
+
+  After 10000 generations:
+    least  : 34934
+    mean   : 35312
+    std dev: 68101
+  least until now: 34934
+
+  After 20000 generations:
+    least  : 34934
+    mean   : 35281
+    std dev: 61478
+  least until now: 34934
+
+
+Instance name: kroC100
+Population size: 10
+
+  After 5000 generations:
+    least  : 47463
+    mean   : 47463
+    std dev: 0
+  least until now: 47463
+
+  After 10000 generations:
+    least  : 42441
+    mean   : 42441
+    std dev: 0
+  least until now: 42441
+
+  After 20000 generations:
+    least  : 37745
+    mean   : 37761
+    std dev: 290
+  least until now: 37745
+
+
+Instance name: kroC100
+Population size: 20
+
+  After 5000 generations:
+    least  : 37403
+    mean   : 37896
+    std dev: 17752
+  least until now: 37403
+
+  After 10000 generations:
+    least  : 34285
+    mean   : 34426
+    std dev: 5367
+  least until now: 34285
+
+  After 20000 generations:
+    least  : 31448
+    mean   : 31599
+    std dev: 5756
+  least until now: 31448
+
+
+Instance name: kroC100
+Population size: 50
+
+  After 5000 generations:
+    least  : 32430
+    mean   : 32684
+    std dev: 22881
+  least until now: 32430
+
+  After 10000 generations:
+    least  : 32175
+    mean   : 32542
+    std dev: 31571
+  least until now: 32175
+
+  After 20000 generations:
+    least  : 32175
+    mean   : 32512
+    std dev: 30344
+  least until now: 32175
+
+
+Instance name: kroC100
+Population size: 100
+
+  After 5000 generations:
+    least  : 30980
+    mean   : 31673
+    std dev: 119196
+  least until now: 30980
+
+  After 10000 generations:
+    least  : 30980
+    mean   : 31261
+    std dev: 50664
+  least until now: 30980
+
+  After 20000 generations:
+    least  : 30980
+    mean   : 31329
+    std dev: 60864
+  least until now: 30980
+
+
+Instance name: kroD100
+Population size: 10
+
+  After 5000 generations:
+    least  : 49491
+    mean   : 49561
+    std dev: 1264
+  least until now: 49438
+
+  After 10000 generations:
+    least  : 38799
+    mean   : 39340
+    std dev: 9743
+  least until now: 38799
+
+  After 20000 generations:
+    least  : 34567
+    mean   : 35263
+    std dev: 11139
+  least until now: 34567
+
+
+Instance name: kroD100
+Population size: 20
+
+  After 5000 generations:
+    least  : 41664
+    mean   : 42156
+    std dev: 17718
+  least until now: 41002
+
+  After 10000 generations:
+    least  : 36660
+    mean   : 37193
+    std dev: 17058
+  least until now: 36660
+
+  After 20000 generations:
+    least  : 32011
+    mean   : 32205
+    std dev: 6990
+  least until now: 32011
+
+
+Instance name: kroD100
+Population size: 50
+
+  After 5000 generations:
+    least  : 32988
+    mean   : 33468
+    std dev: 41320
+  least until now: 32988
+
+  After 10000 generations:
+    least  : 32731
+    mean   : 32963
+    std dev: 20923
+  least until now: 32731
+
+  After 20000 generations:
+    least  : 32731
+    mean   : 32879
+    std dev: 13955
+  least until now: 32731
+
+
+Instance name: kroD100
+Population size: 100
+
+  After 5000 generations:
+    least  : 29566
+    mean   : 29850
+    std dev: 50293
+  least until now: 29566
+
+  After 10000 generations:
+    least  : 29566
+    mean   : 29952
+    std dev: 70282
+  least until now: 29566
+
+  After 20000 generations:
+    least  : 29566
+    mean   : 29913
+    std dev: 64555
+  least until now: 29566
+
+
+Instance name: lin105
+Population size: 10
+
+  After 5000 generations:
+    least  : 36285
+    mean   : 36714
+    std dev: 7731
+  least until now: 35304
+
+  After 10000 generations:
+    least  : 29281
+    mean   : 29711
+    std dev: 6882
+  least until now: 29281
+
+  After 20000 generations:
+    least  : 26846
+    mean   : 27346
+    std dev: 9006
+  least until now: 26702
+
+
+Instance name: lin105
+Population size: 20
+
+  After 5000 generations:
+    least  : 29490
+    mean   : 29490
+    std dev: 0
+  least until now: 29490
+
+  After 10000 generations:
+    least  : 27967
+    mean   : 28130
+    std dev: 6208
+  least until now: 27967
+
+  After 20000 generations:
+    least  : 26405
+    mean   : 26531
+    std dev: 4719
+  least until now: 26405
+
+
+Instance name: lin105
+Population size: 50
+
+  After 5000 generations:
+    least  : 23952
+    mean   : 24064
+    std dev: 10758
+  least until now: 23952
+
+  After 10000 generations:
+    least  : 23722
+    mean   : 24000
+    std dev: 23932
+  least until now: 23722
+
+  After 20000 generations:
+    least  : 23502
+    mean   : 23574
+    std dev: 6793
+  least until now: 23502
+
+
+Instance name: lin105
+Population size: 100
+
+  After 5000 generations:
+    least  : 22374
+    mean   : 22638
+    std dev: 47907
+  least until now: 22374
+
+  After 10000 generations:
+    least  : 22374
+    mean   : 22685
+    std dev: 53507
+  least until now: 22374
+
+  After 20000 generations:
+    least  : 22374
+    mean   : 22677
+    std dev: 52155
+  least until now: 22374
+
+
+Instance name: pcb442
+Population size: 10
+
+  After 5000 generations:
+    least  : 334071
+    mean   : 334357
+    std dev: 5154
+  least until now: 334071
+
+  After 10000 generations:
+    least  : 272843
+    mean   : 272843
+    std dev: 0
+  least until now: 272843
+
+  After 20000 generations:
+    least  : 226007
+    mean   : 227428
+    std dev: 19896
+  least until now: 226007
+
+
+Instance name: pcb442
+Population size: 20
+
+  After 5000 generations:
+    least  : 261933
+    mean   : 262320
+    std dev: 11622
+  least until now: 261933
+
+  After 10000 generations:
+    least  : 213127
+    mean   : 213265
+    std dev: 5245
+  least until now: 213127
+
+  After 20000 generations:
+    least  : 170705
+    mean   : 171019
+    std dev: 11317
+  least until now: 170647
+
+
+Instance name: pcb442
+Population size: 50
+
+  After 5000 generations:
+    least  : 198125
+    mean   : 198166
+    std dev: 3974
+  least until now: 198125
+
+  After 10000 generations:
+    least  : 156354
+    mean   : 156747
+    std dev: 32039
+  least until now: 156354
+
+  After 20000 generations:
+    least  : 126264
+    mean   : 126722
+    std dev: 41264
+  least until now: 126264
+
+
+Instance name: pcb442
+Population size: 100
+
+  After 5000 generations:
+    least  : 155732
+    mean   : 156091
+    std dev: 64057
+  least until now: 155732
+
+  After 10000 generations:
+    least  : 120414
+    mean   : 120709
+    std dev: 54340
+  least until now: 120414
+
+  After 20000 generations:
+    least  : 100175
+    mean   : 100594
+    std dev: 74616
+  least until now: 100175
+
+
+Instance name: pr2392
+Population size: 10
+
+  After 5000 generations:
+    least  : 9670506
+    mean   : 9670634
+    std dev: 2054
+  least until now: 9670506
+
+  After 10000 generations:
+    least  : 8161785
+    mean   : 8169286
+    std dev: 52012
+  least until now: 8157061
+
+  After 20000 generations:
+    least  : 6968700
+    mean   : 6968700
+    std dev: 0
+  least until now: 6968700
+
+
+Instance name: pr2392
+Population size: 20
+
+  After 5000 generations:
+    least  : 8028407
+    mean   : 8029351
+    std dev: 1894
+  least until now: 8028407
+
+  After 10000 generations:
+    least  : 6824310
+    mean   : 6829493
+    std dev: 71490
+  least until now: 6823463
+
+  After 20000 generations:
+    least  : 5665887
+    mean   : 5666949
+    std dev: 40360
+  least until now: 5665887
+
+
+Instance name: pr2392
+Population size: 50
+
+  After 5000 generations:
+    least  : 6272059
+    mean   : 6278068
+    std dev: 283438
+  least until now: 6272059
+
+  After 10000 generations:
+    least  : 5177566
+    mean   : 5179802
+    std dev: 178882
+  least until now: 5177566
+
+  After 20000 generations:
+    least  : 4099111
+    mean   : 4100754
+    std dev: 121012
+  least until now: 4099111
+
+
+Instance name: pr2392
+Population size: 100
+
+  After 5000 generations:
+    least  : 5344778
+    mean   : 5346635
+    std dev: 234447
+  least until now: 5344778
+
+  After 10000 generations:
+    least  : 4243438
+    mean   : 4244656
+    std dev: 221774
+  least until now: 4243438
+
+  After 20000 generations:
+    least  : 3372933
+    mean   : 3373581
+    std dev: 120531
+  least until now: 3372933
+
+
+
+Algo3
+
+
+Instance name: eil51
+Population size: 10
+
+  After 5000 generations:
+    least  : 439
+    mean   : 439
+    std dev: 0
+  least until now: 439
+
+  After 10000 generations:
+    least  : 438
+    mean   : 446
+    std dev: 134
+  least until now: 438
+
+  After 20000 generations:
+    least  : 438
+    mean   : 441
+    std dev: 55
+  least until now: 438
+
+
+Instance name: eil51
+Population size: 20
+
+  After 5000 generations:
+    least  : 430
+    mean   : 430
+    std dev: 0
+  least until now: 430
+
+  After 10000 generations:
+    least  : 430
+    mean   : 430
+    std dev: 0
+  least until now: 430
+
+  After 20000 generations:
+    least  : 430
+    mean   : 430
+    std dev: 0
+  least until now: 430
+
+
+Instance name: eil51
+Population size: 50
+
+  After 5000 generations:
+    least  : 436
+    mean   : 436
+    std dev: 17
+  least until now: 436
+
+  After 10000 generations:
+    least  : 436
+    mean   : 436
+    std dev: 23
+  least until now: 436
+
+  After 20000 generations:
+    least  : 436
+    mean   : 436
+    std dev: 0
+  least until now: 436
+
+
+Instance name: eil51
+Population size: 100
+
+  After 5000 generations:
+    least  : 457
+    mean   : 457
+    std dev: 44
+  least until now: 457
+
+  After 10000 generations:
+    least  : 457
+    mean   : 457
+    std dev: 5
+  least until now: 457
+
+  After 20000 generations:
+    least  : 457
+    mean   : 457
+    std dev: 0
+  least until now: 457
+
+
+Instance name: eil76
+Population size: 10
+
+  After 5000 generations:
+    least  : 604
+    mean   : 604
+    std dev: 0
+  least until now: 604
+
+  After 10000 generations:
+    least  : 567
+    mean   : 567
+    std dev: 0
+  least until now: 567
+
+  After 20000 generations:
+    least  : 563
+    mean   : 563
+    std dev: 0
+  least until now: 563
+
+
+Instance name: eil76
+Population size: 20
+
+  After 5000 generations:
+    least  : 585
+    mean   : 585
+    std dev: 0
+  least until now: 585
+
+  After 10000 generations:
+    least  : 577
+    mean   : 582
+    std dev: 185
+  least until now: 577
+
+  After 20000 generations:
+    least  : 577
+    mean   : 577
+    std dev: 0
+  least until now: 577
+
+
+Instance name: eil76
+Population size: 50
+
+  After 5000 generations:
+    least  : 549
+    mean   : 549
+    std dev: 0
+  least until now: 549
+
+  After 10000 generations:
+    least  : 549
+    mean   : 553
+    std dev: 398
+  least until now: 549
+
+  After 20000 generations:
+    least  : 549
+    mean   : 549
+    std dev: 0
+  least until now: 549
+
+
+Instance name: eil76
+Population size: 100
+
+  After 5000 generations:
+    least  : 578
+    mean   : 578
+    std dev: 63
+  least until now: 578
+
+  After 10000 generations:
+    least  : 578
+    mean   : 578
+    std dev: 0
+  least until now: 578
+
+  After 20000 generations:
+    least  : 569
+    mean   : 569
+    std dev: 0
+  least until now: 569
+
+
+Instance name: eil101
+Population size: 10
+
+  After 5000 generations:
+    least  : 906
+    mean   : 906
+    std dev: 0
+  least until now: 906
+
+  After 10000 generations:
+    least  : 732
+    mean   : 732
+    std dev: 0
+  least until now: 732
+
+  After 20000 generations:
+    least  : 687
+    mean   : 687
+    std dev: 0
+  least until now: 687
+
+
+Instance name: eil101
+Population size: 20
+
+  After 5000 generations:
+    least  : 720
+    mean   : 720
+    std dev: 0
+  least until now: 720
+
+  After 10000 generations:
+    least  : 691
+    mean   : 691
+    std dev: 0
+  least until now: 691
+
+  After 20000 generations:
+    least  : 675
+    mean   : 675
+    std dev: 0
+  least until now: 675
+
+
+Instance name: eil101
+Population size: 50
+
+  After 5000 generations:
+    least  : 699
+    mean   : 699
+    std dev: 6
+  least until now: 699
+
+  After 10000 generations:
+    least  : 695
+    mean   : 699
+    std dev: 383
+  least until now: 695
+
+  After 20000 generations:
+    least  : 690
+    mean   : 690
+    std dev: 4
+  least until now: 690
+
+
+Instance name: eil101
+Population size: 100
+
+  After 5000 generations:
+    least  : 700
+    mean   : 700
+    std dev: 0
+  least until now: 700
+
+  After 10000 generations:
+    least  : 700
+    mean   : 700
+    std dev: 17
+  least until now: 700
+
+  After 20000 generations:
+    least  : 700
+    mean   : 700
+    std dev: 0
+  least until now: 700
+
+
+Instance name: st70
+Population size: 10
+
+  After 5000 generations:
+    least  : 824
+    mean   : 824
+    std dev: 0
+  least until now: 824
+
+  After 10000 generations:
+    least  : 756
+    mean   : 756
+    std dev: 0
+  least until now: 756
+
+  After 20000 generations:
+    least  : 735
+    mean   : 735
+    std dev: 0
+  least until now: 735
+
+
+Instance name: st70
+Population size: 20
+
+  After 5000 generations:
+    least  : 710
+    mean   : 710
+    std dev: 0
+  least until now: 710
+
+  After 10000 generations:
+    least  : 693
+    mean   : 693
+    std dev: 0
+  least until now: 693
+
+  After 20000 generations:
+    least  : 693
+    mean   : 701
+    std dev: 303
+  least until now: 693
+
+
+Instance name: st70
+Population size: 50
+
+  After 5000 generations:
+    least  : 707
+    mean   : 707
+    std dev: 0
+  least until now: 707
+
+  After 10000 generations:
+    least  : 707
+    mean   : 707
+    std dev: 0
+  least until now: 707
+
+  After 20000 generations:
+    least  : 707
+    mean   : 707
+    std dev: 0
+  least until now: 707
+
+
+Instance name: st70
+Population size: 100
+
+  After 5000 generations:
+    least  : 732
+    mean   : 732
+    std dev: 0
+  least until now: 732
+
+  After 10000 generations:
+    least  : 731
+    mean   : 731
+    std dev: 0
+  least until now: 731
+
+  After 20000 generations:
+    least  : 731
+    mean   : 731
+    std dev: 0
+  least until now: 731
+
+
+Instance name: kroA100
+Population size: 10
+
+  After 5000 generations:
+    least  : 33591
+    mean   : 33591
+    std dev: 0
+  least until now: 33591
+
+  After 10000 generations:
+    least  : 28514
+    mean   : 28514
+    std dev: 0
+  least until now: 28514
+
+  After 20000 generations:
+    least  : 24919
+    mean   : 24919
+    std dev: 0
+  least until now: 24919
+
+
+Instance name: kroA100
+Population size: 20
+
+  After 5000 generations:
+    least  : 26559
+    mean   : 26704
+    std dev: 4939
+  least until now: 26559
+
+  After 10000 generations:
+    least  : 23819
+    mean   : 23819
+    std dev: 0
+  least until now: 23819
+
+  After 20000 generations:
+    least  : 22625
+    mean   : 22625
+    std dev: 0
+  least until now: 22625
+
+
+Instance name: kroA100
+Population size: 50
+
+  After 5000 generations:
+    least  : 23186
+    mean   : 23196
+    std dev: 995
+  least until now: 23186
+
+  After 10000 generations:
+    least  : 22841
+    mean   : 22844
+    std dev: 334
+  least until now: 22841
+
+  After 20000 generations:
+    least  : 22841
+    mean   : 22841
+    std dev: 0
+  least until now: 22841
+
+
+Instance name: kroA100
+Population size: 100
+
+  After 5000 generations:
+    least  : 22045
+    mean   : 22078
+    std dev: 6427
+  least until now: 22045
+
+  After 10000 generations:
+    least  : 22045
+    mean   : 22149
+    std dev: 19632
+  least until now: 22045
+
+  After 20000 generations:
+    least  : 22045
+    mean   : 22045
+    std dev: 0
+  least until now: 22045
+
+
+Instance name: kroC100
+Population size: 10
+
+  After 5000 generations:
+    least  : 31072
+    mean   : 31072
+    std dev: 0
+  least until now: 31072
+
+  After 10000 generations:
+    least  : 26670
+    mean   : 26773
+    std dev: 1862
+  least until now: 26670
+
+  After 20000 generations:
+    least  : 23298
+    mean   : 23298
+    std dev: 0
+  least until now: 23298
+
+
+Instance name: kroC100
+Population size: 20
+
+  After 5000 generations:
+    least  : 26377
+    mean   : 26612
+    std dev: 8465
+  least until now: 26377
+
+  After 10000 generations:
+    least  : 23606
+    mean   : 23606
+    std dev: 0
+  least until now: 23606
+
+  After 20000 generations:
+    least  : 23192
+    mean   : 23192
+    std dev: 0
+  least until now: 23192
+
+
+Instance name: kroC100
+Population size: 50
+
+  After 5000 generations:
+    least  : 23796
+    mean   : 23796
+    std dev: 0
+  least until now: 23796
+
+  After 10000 generations:
+    least  : 23468
+    mean   : 23468
+    std dev: 0
+  least until now: 23468
+
+  After 20000 generations:
+    least  : 23310
+    mean   : 23342
+    std dev: 3072
+  least until now: 23310
+
+
+Instance name: kroC100
+Population size: 100
+
+  After 5000 generations:
+    least  : 23773
+    mean   : 23773
+    std dev: 0
+  least until now: 23773
+
+  After 10000 generations:
+    least  : 23773
+    mean   : 23773
+    std dev: 0
+  least until now: 23773
+
+  After 20000 generations:
+    least  : 23773
+    mean   : 23773
+    std dev: 0
+  least until now: 23773
+
+
+Instance name: kroD100
+Population size: 10
+
+  After 5000 generations:
+    least  : 33750
+    mean   : 33750
+    std dev: 0
+  least until now: 33750
+
+  After 10000 generations:
+    least  : 26801
+    mean   : 26801
+    std dev: 0
+  least until now: 26801
+
+  After 20000 generations:
+    least  : 24323
+    mean   : 24654
+    std dev: 5967
+  least until now: 24323
+
+
+Instance name: kroD100
+Population size: 20
+
+  After 5000 generations:
+    least  : 26379
+    mean   : 26379
+    std dev: 0
+  least until now: 26379
+
+  After 10000 generations:
+    least  : 24556
+    mean   : 24699
+    std dev: 5154
+  least until now: 24556
+
+  After 20000 generations:
+    least  : 24008
+    mean   : 24239
+    std dev: 8787
+  least until now: 24008
+
+
+Instance name: kroD100
+Population size: 50
+
+  After 5000 generations:
+    least  : 22573
+    mean   : 22573
+    std dev: 0
+  least until now: 22573
+
+  After 10000 generations:
+    least  : 22331
+    mean   : 22331
+    std dev: 0
+  least until now: 22331
+
+  After 20000 generations:
+    least  : 22331
+    mean   : 22331
+    std dev: 0
+  least until now: 22331
+
+
+Instance name: kroD100
+Population size: 100
+
+  After 5000 generations:
+    least  : 23009
+    mean   : 23009
+    std dev: 0
+  least until now: 23009
+
+  After 10000 generations:
+    least  : 23009
+    mean   : 23116
+    std dev: 19565
+  least until now: 23009
+
+  After 20000 generations:
+    least  : 23009
+    mean   : 23009
+    std dev: 0
+  least until now: 23009
+
+
+Instance name: lin105
+Population size: 10
+
+  After 5000 generations:
+    least  : 22192
+    mean   : 22192
+    std dev: 0
+  least until now: 22129
+
+  After 10000 generations:
+    least  : 19081
+    mean   : 19081
+    std dev: 0
+  least until now: 19081
+
+  After 20000 generations:
+    least  : 17587
+    mean   : 17587
+    std dev: 0
+  least until now: 17587
+
+
+Instance name: lin105
+Population size: 20
+
+  After 5000 generations:
+    least  : 19195
+    mean   : 19213
+    std dev: 692
+  least until now: 19195
+
+  After 10000 generations:
+    least  : 15619
+    mean   : 15619
+    std dev: 0
+  least until now: 15619
+
+  After 20000 generations:
+    least  : 14964
+    mean   : 14964
+    std dev: 0
+  least until now: 14964
+
+
+Instance name: lin105
+Population size: 50
+
+  After 5000 generations:
+    least  : 16177
+    mean   : 16177
+    std dev: 0
+  least until now: 16177
+
+  After 10000 generations:
+    least  : 15731
+    mean   : 15748
+    std dev: 1674
+  least until now: 15731
+
+  After 20000 generations:
+    least  : 15731
+    mean   : 15731
+    std dev: 0
+  least until now: 15731
+
+
+Instance name: lin105
+Population size: 100
+
+  After 5000 generations:
+    least  : 16512
+    mean   : 16512
+    std dev: 0
+  least until now: 16512
+
+  After 10000 generations:
+    least  : 16512
+    mean   : 16512
+    std dev: 0
+  least until now: 16512
+
+  After 20000 generations:
+    least  : 16512
+    mean   : 16512
+    std dev: 0
+  least until now: 16512
+
+
+Instance name: pcb442
+Population size: 10
+
+  After 5000 generations:
+    least  : 311773
+    mean   : 311773
+    std dev: 0
+  least until now: 311773
+
+  After 10000 generations:
+    least  : 232286
+    mean   : 232286
+    std dev: 0
+  least until now: 232286
+
+  After 20000 generations:
+    least  : 158862
+    mean   : 159277
+    std dev: 4784
+  least until now: 158862
+
+
+Instance name: pcb442
+Population size: 20
+
+  After 5000 generations:
+    least  : 226869
+    mean   : 285555
+    std dev: 1860928
+  least until now: 226869
+
+  After 10000 generations:
+    least  : 157652
+    mean   : 157781
+    std dev: 4920
+  least until now: 157652
+
+  After 20000 generations:
+    least  : 115468
+    mean   : 115990
+    std dev: 17618
+  least until now: 115468
+
+
+Instance name: pcb442
+Population size: 50
+
+  After 5000 generations:
+    least  : 149600
+    mean   : 149853
+    std dev: 23321
+  least until now: 149600
+
+  After 10000 generations:
+    least  : 101543
+    mean   : 101543
+    std dev: 0
+  least until now: 101543
+
+  After 20000 generations:
+    least  : 79162
+    mean   : 79162
+    std dev: 0
+  least until now: 79162
+
+
+Instance name: pcb442
+Population size: 100
+
+  After 5000 generations:
+    least  : 115193
+    mean   : 115193
+    std dev: 0
+  least until now: 115193
+
+  After 10000 generations:
+    least  : 80986
+    mean   : 80986
+    std dev: 0
+  least until now: 80986
+
+  After 20000 generations:
+    least  : 65741
+    mean   : 65741
+    std dev: 0
+  least until now: 65741
+
+
+Instance name: pr2392
+Population size: 10
+
+  After 5000 generations:
+    least  : 10841165
+    mean   : 10841165
+    std dev: 0
+  least until now: 10840953
+
+  After 10000 generations:
+    least  : 8705455
+    mean   : 8705902
+    std dev: 897
+  least until now: 8705455
+
+  After 20000 generations:
+    least  : 8933759
+    mean   : 9176219
+    std dev: 2290796
+  least until now: 8173830
+
+
+Instance name: pr2392
+Population size: 20
+
+  After 5000 generations:
+    least  : 9276717
+    mean   : 11317071
+    std dev: 40773530
+  least until now: 9276717
+
+  After 10000 generations:
+    least  : 7213798
+    mean   : 7214473
+    std dev: 1359
+  least until now: 7213798
+
+  After 20000 generations:
+    least  : 5132771
+    mean   : 5132771
+    std dev: 0
+  least until now: 5132771
+
+
+Instance name: pr2392
+Population size: 50
+
+  After 5000 generations:
+    least  : 7318379
+    mean   : 8626272
+    std dev: 86275597
+  least until now: 7318379
+
+  After 10000 generations:
+    least  : 5112597
+    mean   : 5112865
+    std dev: 7495
+  least until now: 5112597
+
+  After 20000 generations:
+    least  : 3385008
+    mean   : 3385008
+    std dev: 0
+  least until now: 3385008
+
+
+Instance name: pr2392
+Population size: 100
+
+  After 5000 generations:
+    least  : 6036083
+    mean   : 6036366
+    std dev: 580
+  least until now: 6036083
+
+  After 10000 generations:
+    least  : 4027209
+    mean   : 5998093
+    std dev: 275785757
+  least until now: 4027209
+
+  After 20000 generations:
+    least  : 2583949
+    mean   : 2583949
+    std dev: 0
+  least until now: 2583949
+

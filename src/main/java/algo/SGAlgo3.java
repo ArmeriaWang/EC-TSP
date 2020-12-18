@@ -11,6 +11,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * tournamentSelection + cycleCrossover + inversion mutation
+ */
 public class SGAlgo3 extends SimpleGeneticAlgo {
 
     private final double probCross = 0.8;
@@ -32,10 +35,12 @@ public class SGAlgo3 extends SimpleGeneticAlgo {
         int generationCnt = 1;
         int leastDis = population.getLeastTourDis(problem);
         int sampleNum = (int) Math.sqrt(individualNum);
-        while (true) {
+        while (true) {  //iterate
             List<Individual> offsprings = new ArrayList<>();
+            //select parents
             Population matingPool = population.tournamentSelection(problem, sampleNum);
             List<Individual> matingIndividuals = matingPool.getIndividuals();
+            //crossover
             for (int i = 0; i < individualNum; i += 2) {
                 double randNum = Math.random();
                 if (randNum < probCross) {
@@ -47,11 +52,13 @@ public class SGAlgo3 extends SimpleGeneticAlgo {
                     offsprings.add(matingIndividuals.get(i + 1));
                 }
             }
+            //mutation
             for (int i = 0; i < offsprings.size(); i++) {
                 while (Math.random() < probMutation) {
                     offsprings.set(i, offsprings.get(i).inversion());
                 }
             }
+            //survivor selction
             population = matingPool.elitism(problem, new Population(offsprings), (int) (individualNum * 0.1));
             leastDis = Math.min(leastDis, population.getLeastTourDis(problem));
             generationCnt++;

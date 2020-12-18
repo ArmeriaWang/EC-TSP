@@ -12,6 +12,9 @@ public class ResultRecorder {
     private final String filePath = "out/log/";
     private final File file;
 
+    /**
+     * init results file
+     */
     public ResultRecorder(String algoName) throws IOException {
         file = new File(filePath + "result_" + algoName + ".txt");
         file.createNewFile();
@@ -29,6 +32,9 @@ public class ResultRecorder {
         fileWriter.close();
     }
 
+    /**
+     * output the running information to the log
+     */
     public void writeResult(int generationCnt,
                             Population population,
                             int leastDis,

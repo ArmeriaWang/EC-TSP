@@ -17,6 +17,7 @@ public class ResultRecorder {
      */
     public ResultRecorder(String algoName) throws IOException {
         file = new File(filePath + "result_" + algoName + ".txt");
+        file.getParentFile().mkdirs();
         file.createNewFile();
         FileWriter fileWriter = new FileWriter(file);
         fileWriter.write(algoName + "\n\n");
